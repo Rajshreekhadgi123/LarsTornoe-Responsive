@@ -1,0 +1,210 @@
+/* universal css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    margin: 0px 35px;
+}
+
+
+/* navbar items */
+
+.navbar .navbar-nav .nav-link{
+    margin-top: 18px;
+    font-size: 1.1rem;
+    color: black;
+   
+}
+.navbar .navbar-nav .nav-link p:hover{
+    background-color:  rgb(252, 242, 157);
+    
+}
+.navbar-nav .nav-link{
+    margin: 0 20px;
+}
+.navbar-nav{
+    margin-right: 20px;
+}
+
+
+/* hamburger menu */
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: -17px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 28px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 7px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+/* toggler border remove css */
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    box-shadow: none;
+}
+.navbar-toggler{
+    border: none;
+    
+}
+
+
+
+
+/* image section  */
+
+.box img{
+    /* width: 600px; */
+    height: 500px;
+    
+}
+
+.space{
+    
+   margin: 0 20px;
+   
+} 
+
+.text{
+   margin-top: 230px;
+   margin-left: 50px;
+   font-size: 1.5rem;
+   font-weight: 500;
+} 
+
+
+  .overlay{
+    position:absolute;
+    top: 0;
+    left: 30; 
+    right: 30; 
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: rgb(252, 242, 157);
+   
+    
+    cursor: pointer;
+}
+.box{
+     
+    position:relative;
+}
+/* hove rover image */
+
+.box:hover .overlay{
+    opacity: 0.8;
+} 
+
+
+/* for extra larger screens  */
+.col-12 img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+   
+}
+.col-lg-6 img{
+    width: 100%;
+    margin-top: 10px;
+    height: 320px;
+   
+}
+.col-12 .overlay{
+    
+        width: 100%;
+        height: 320px;
+        margin-top: 10px;
+        
+} 
+/* media query for mobile and tablet */
+
+@media (min-width:200px) and (max-width : 900px)
+{
+
+.navbar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar-brand img{
+    height: 12px;
+}
+
+.box img{
+    height: 200px;
+}
+.text{
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+ } 
+
+ 
+
+
+}
+
+/* media query for small devices */
+
+@media (min-width:200px) and (max-width : 500px)
+{
+
+    .col-12 .overlay{
+        height: 200px;
+     }
+
+     .text{
+        margin-top: 140px;
+        margin-left: 50px;
+        font-size: 1.2rem;
+        font-weight: 500;
+     } 
+
+}
+@media (min-width:500px) and (max-width : 768px)
+{
+
+    .col-md-12 .overlay{
+        height: 300px;
+     }
+     .box img{
+        height: 300px;
+    }
+    .text{
+        margin-top: 200px;
+        margin-left: 50px;
+        font-size: 1.2rem;
+        font-weight: 500;
+     } 
+
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+
